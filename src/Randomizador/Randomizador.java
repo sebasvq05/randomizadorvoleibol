@@ -9,7 +9,7 @@ public class Randomizador {
 	public static void agregarJugadores(Scanner sc, String posicion, ArrayList<String> lista) {
 		System.out.print("¿Cuántos " + posicion + " deseas añadir? ");
 		int cantidad = sc.nextInt();
-		sc.nextLine(); 
+		sc.nextLine();
 
 		for (int i = 0; i < cantidad; i++) {
 			System.out.print("Nombre del/la " + posicion + " " + (i + 1) + ": ");
@@ -18,7 +18,7 @@ public class Randomizador {
 		}
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		Scanner sc = new Scanner(System.in);
 
@@ -35,9 +35,12 @@ public class Randomizador {
 		agregarJugadores(sc, "opuestos", opuestos);
 
 		int respuesta;
-
+		Thread.sleep(1000);
+		System.out.println();
+		System.out.println("\t¡Va a empezar el partido!\n");
 		do {
-			System.out.println("En que posición está la colocadora: ");
+
+			System.out.println("Posición de la colocadora: ");
 			respuesta = sc.nextInt();
 
 			if (respuesta == 0) {
