@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class Pincipal {
+public class LosTitis {
 
 	public static void main(String[] args) {
 
